@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Link, Route } from 'react-router-dom';
 import './App.css';
+import HomePage from './components/HomePage';
 import ReviewList from './components/ReviewList';
 import ReviewForm from './components/ReviewForm';
 import RestaurantList from './components/RestaurantList';
@@ -215,12 +216,13 @@ handleRegistration(creds) {
     if(this.state.currentUser){
       Site = (
         <div class="background">
+        <HomePage />
         <nav>
           <ul>
-            <li><Link to="/" onClick={this.logOut}> Logout</Link></li>
             <li><Link to="/search"> Search </Link></li>
             <li><Link to="/reviews">Reviews </Link></li>
             <li><Link to='/new'> Add New Review </Link></li>
+            <li><Link to="/" onClick={this.logOut}> Logout</Link></li>
           </ul>
         </nav>
       <Switch>
@@ -232,7 +234,9 @@ handleRegistration(creds) {
       )
     }
       else{
-       Site = ( <div className="App">
+      Site = ( <div className="App">
+      <HomePage />
+      <br />
        Login:
         <Login onSubmit = {this.handleLogin} />
        Register:

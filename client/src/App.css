@@ -1,26 +1,28 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
-
-
-body {
+* {
   margin: 0;
-  font-family:"Lato", sans-serif;
-  text-align: center;
-  font-color: #7C2A30;
+  padding: 0;
+  font-family: Helvetica, Sans-Serif;
+
 }
 
-nav {
+.logo {
+  border-top: solid 5px #0c6bed;
+  border-bottom: solid 1px lightgrey;
+  padding: 5px 0px 5px 20px;
+}
+
+/*nav {
   padding: 10px;
   background-color: purple;
-}
+  margin:0;
+}*/
 
-
+/*
 ul {
   list-style-type: none;
+  margin-top: 0;
 }
 
-ul {
-  list-style-type:none;
-}
 ul li {
   display:inline-block;
   font-size:20px;
@@ -45,12 +47,6 @@ li a:active {
   text-decoration:none;
 }
 
-body {
-  background-image:url(https://format-com-cld-res.cloudinary.com/image/private/s--z9f5lVOS--/c_limit,g_center,h_65535,w_2500/a_auto,fl_keep_iptc.progressive,q_95/v1/7707f8b1b492ad9fc7bab4f031d9d035/burger_update.jpg);
-  background-size:cover;
-  background-position:center;
-}
-
 .title {
   color:white;
   font-size:40px;
@@ -66,3 +62,5 @@ body {
 .list {
   color:white;
 }
+
+*/
